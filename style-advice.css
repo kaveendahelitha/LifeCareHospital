@@ -1,0 +1,39 @@
+#ad_box{
+    margin:70px;
+    text-align: center;
+    font-size: 4vmin;
+    margin-left: 12vw;
+    margin-bottom: 18vh;
+}
+#row1{
+    display:flex;
+}
+#row2{
+    display:flex;
+    margin-top: 100px;
+}
+#advice{
+    width:350px;
+    height:200px;
+    margin-right:50px;
+}
+#img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    object-position:top;
+    transition: transform .5s;
+    transition:all .5s ease-out;
+}
+#img:hover{
+    transform:scale(1.1);
+}
+h3{
+    color:rgb(19, 0, 128);
+    font-family: 'Times New Roman', Times, serif;
+    font-size:22px;
+}
+#text{
+    font-size:20px;
+    font-family: 'Times New Roman', Times, serif;
+}

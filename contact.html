@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style-header-footer.css">
+        <link rel="stylesheet" href="style-contactUs.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <title>Life Care Hospital</title>
+    </head>
+    <body>
+        <!------------------Header ----------------------->
+    <section class="header">
+        <!------------------ nav bar ---------------------->
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="consultant.html">consultant</a></li>
+                    <li><a href="e-channelling.html">E-Channeling</a></li>
+                    <li><a href="child-care.html">Child Care</a></li>
+                    <li><a href="covid-19.html">Covid-19</a></li>
+                    <li><a href="advice.html">Advice</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        
+    </section>
+
+    
+    <section class="mainContainer">
+        <div class="tabButtonSet">
+            <div id="tab-1" class="tabButton" onclick="selectTab(1)">Suggestions/Complaints</div>
+            <div id="tab-2" class="tabButton" onclick="selectTab(2)">Contact Details</div>
+            <div id="tab-3" class="tabButton" onclick="selectTab(3)">Location</div>
+        </div>
+
+        <div class="tabcontainer">
+            <!-- <div class="hide tb">
+                <h3>Defult page</h3>
+            </div> -->
+            <div id="tabcontent-1" class="hide tb">
+                <h2>Suggestions/Complaints</h2>
+                <!-- form -->
+                <form name="contactUs" onsubmit="return checkForm()">
+                    <div class="inputElm">
+                        <label for="name">Your Name* : </label><br>
+                        <input type="text"  name="name"><label id="erro1"></label><br><br>
+                    </div>
+                    <div class="inputElm">
+                        <label for="email" name="email">Email :</label><br>
+                        <input type="email"  name="email"><br><br>
+                    </div>
+                    <div class="inputElm">
+                        <label for="telNo" name="telNo">Telephone :</label><br>
+                        <input type="tel"  name="telNo"><br><br>
+                    </div>
+                    <div class="inputElm">
+                        <label for="message" name="message">Message* :</label><br>
+                        <textarea name="message"  cols="55" rows="10"></textarea><label id="erro2"></label><br>
+                    </div>
+                    <br>
+                    <input type="submit" value="Send">
+                    <br><br>
+                </form>
+            </div>
+
+            <!---------------------contact details--------------->
+
+            <div id="tabcontent-2" class="hide tb">
+                <h2>Contact Details</h2>
+
+                <div class="contact">
+                    <div class="contact-col container_S">
+
+                        <div class= "main-card" >
+                            <div class="cards"> 
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                        <img src="Images/cus.jpg" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Mr. K.W.Thennakoon</div>
+                                            <div class="prof">Customer Service</div>
+                                            <div class="tel">071 4567890</div>
+                                            <div class="mail">lifecare@hospitals.lk</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                        <img src="images/dire2.jpeg" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Mr.W.M.W.P.Weerakoon</div>
+                                            <div class="prof">Director/CEO</div>
+                                            <div class="tel">071 3583273</div>
+                                            <div class="mail">weerakoon@lifecare.lk</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="content">
+                                        <div class="img">
+                                        <img src="images/mang4.jpeg" alt="">
+                                        </div>
+                                        <div class="details">
+                                            <div class="name">Ms. P.W. Ayesha Amunugama</div>
+                                            <div class="prof">Managing Director, Lifecare Hospitals</div>
+                                            <div class="tel">077 3273655</div>
+                                            <div class="mail">ayeshaam@lifecare.lk</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------Location----------->
+            <div id="tabcontent-3" class="hide tb">        
+                <center>
+                    <h2>
+                        Hospital location
+                    </h2>
+                    <div id="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7922.074848272507!2d79.85873139316804!3d6.886120864244864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25bd1834d1d15%3A0xc2363688e493eccd!2sHavelock%20Town%2C%20Colombo!5e0!3m2!1sen!2slk!4v1646512282701!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                width="500"
+                                height="300"
+                                frameborder="0"
+                                style="border:0;"
+                                allowfullscreen=""
+                                aria-hidden="false"
+                                tabindex="0">
+                        </iframe>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+
+        <!--------------------- footer ------------------------------>
+        <section class="footerD">
+            
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col">
+                            <h4>Hospital</h4>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Our Services</a></li>
+                                <li><a href="consultant.html">Consultants</a></li>
+                                <li><a href="covid-19.html">Covid-19</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Get Help</h4>
+                            <ul>
+                                <li><a href="faq.html">FAQ</a></li>
+                                <li><a href="branches.html">Branches</a></li>
+                                <li><a href="facilities.html">Facilities</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>E-Channelling</h4>
+                        <ul>
+                            <li><a href="e-channelling.html">Channel Doctor</a></li>
+                            <li><a href="payment.html">Payment Options</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="ourTeam">
+                    <a href="team.html">Developing Team</a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    
+        <!------------------ js for mobile menu------------------>
+        <script src="myscripts.js"></script>
+        
+        <script src="js-contactUs.js"></script>
+    </body>
+    </html>

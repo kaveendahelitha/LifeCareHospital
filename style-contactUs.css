@@ -1,0 +1,278 @@
+/* body {font-family: Arial, Helvetica, sans-serif;} */
+
+.show {display: block;}
+.hide {display: none;}
+
+body {
+
+    background-color: rgba(142, 167, 236, 0.3);
+    margin: 0;
+
+    
+}
+
+
+.header{
+    margin: 0;
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 0;
+}
+.footerD{
+    display: block;
+    /* position: relative; */
+
+}
+
+.tabButtonSet{
+
+    position: relative;
+    display: block;
+    left: 22vw;
+    top: 2vh;
+}
+
+
+
+.tabButton {
+    display : inline; 
+    padding: 10px 20px; 
+    background: #eee;
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 2px 0 2px #aaa; 
+    margin: 5px;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+
+    cursor: pointer;
+
+    width: 15vw;
+    background-image: radial-gradient(#72d1e2, #74f594);
+    
+}
+.tabButton:hover {
+    background-color: rgb(184, 252, 229);
+    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.46) ;   
+}
+.tabButton.active {
+    color: rgb(236, 236, 236);
+    background:rgb(168, 219, 243);
+    background-image: radial-gradient(#647baf, #d774f5);
+    
+}
+
+
+.tb{
+    position: relative;
+    background: rgb(236, 243, 243);
+    height: 70vh;
+    width: 50vw;
+    top: 3vh;
+    left: 20vw;
+    border-radius: 10px;
+    /* box-shadow: rgba(39, 88, 221, 0.3); */
+    box-shadow: 0 0 10px 4px rgba(7, 51, 102, 0.46) ;
+}
+#tabcontent-2{
+    background: rgba(128, 199, 231, 0.3);
+    width: 60vw;
+    height: 60vh;
+}
+#tabcontent-1{
+    
+    position: relative;
+    background: rgba(128, 199, 231, 0.3);
+    width: 30vw;
+    height: 70vh;
+    left: 35.5vw;
+}
+#tabcontent-3{
+    
+    /* position: relative; */
+    background: rgba(128, 199, 231, 0.3);
+    position: relative;
+    left: 25vw;
+    /* width: 30vw;
+    height: 60vh;
+    left: 35.5vw; */
+}
+
+.tb h2{
+    display: block;
+    position: relative;
+    text-align: center;
+    top: 2vh;
+    color: rgb(255, 255, 255);
+    font-size:  30px;
+}
+
+#erro1 , #erro2 {
+    font-family: monospace;
+    font-weight: 500px;
+    color: red;
+    font-size: 18px;
+}
+
+/*****************Contact details****************/
+.contact{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+ }
+.contact-col{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+}
+.mainContainer{
+    /* max-width: 950px; */
+    width: 100wh;
+    height: 90vh;
+    /* padding: 80px 0; */
+    /* height: 88vh; */
+    /* display: block;
+    position: relative; */
+
+    background-image: linear-gradient(rgba(4, 9, 30, 0.4), rgba(4, 9, 30, 0.4)),
+    url(images/banner-consultant.jpg);
+
+    /* background-color: brown; */
+   
+
+}
+.main-card .cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.20px;
+    column-gap: 20px;
+    position: relative;
+    top: 0vh;
+}
+.main-card .cards .card{
+    background: rgb(219, 239, 248);
+    width: calc(100% / 3- 10px);
+    padding: 30px;
+    border-radius: 30px;
+
+    background-image: radial-gradient(#ffffff, #74c5f5);
+}
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: #2676ee;
+    padding: 3px;
+    border-radius: 50%;
+}
+.card .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 3px solid rgb(60, 207, 226);   
+} 
+.card .content .details .name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card .content .details .prof{
+    font-size: 15px;
+    color: #098a7f;
+}
+.card .content .details .tel{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card .content .details .mail{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.main-card{
+    position: absolute;
+    display: block;
+    top:10vh;
+}
+.card{
+    display: inline-block;
+    position: relative;
+    width: 13.5vw;
+
+    
+}
+
+/************Location*************/
+    
+/* background-image: linear-gradient(to right, dodgerblue, darkblue); */
+
+.h1{
+    color:rgb(74, 41, 128);
+}
+
+#map{
+    background-color: rgb(11, 31, 48);
+
+   
+}
+
+/* -----------form------------- */
+
+.inputElm{
+    display: block;
+    position: relative;
+    left: 0.6vw;
+}
+
+.inputElm label{
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    font-family:cursive;
+}
+
+.inputElm input{
+    position: relative;
+    margin:8px 2px;
+    height: 3vh;
+    width: 28vw;
+    top:0px;
+    background-color: rgba(188, 220, 224, 0.541);
+}
+.inputElm textarea{
+    position: relative;
+    margin:8px 2px;
+    height: 15vh;
+    width: 28vw;
+    top:0px;
+    background-color: rgba(188, 220, 224, 0.541);
+}
+
+input[type="submit"]{
+    position: relative;
+    margin: 0px;
+    left: 1vw;
+    bottom: 2.2vh;
+    width: 6vw;
+    height: 4vh;
+    border-radius: 5px;
+    background-color: rgb(211, 204, 204);
+    font-weight: bold;
+    font-family: cursive;
+    font-size: 17px;
+}
+

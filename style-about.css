@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*Whole doc*/
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+.main-picture div::before{
+    content: '';
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(187, 235, 212);
+    opacity: 0.1;
+}
+
+/*********************main picture***************************/
+.main-picture{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    display: block;
+}
+.head{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in;
+}
+
+
+.main{
+    min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.35 ), rgba(4, 9, 30, 0.35)),
+    url(images/aboutMain.jpeg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+.text{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translate(0%, -50%);
+}
+.text h1{
+    position: relative;
+    font-size: 4rem;
+    text-transform: capitalize;
+    color: #fafafa;
+    font-weight: bold;
+    background-color:rgba(7, 8, 12, 0.25) ;
+}
+.text span{
+    position: absolute;
+    background: rgb(238, 203, 89);
+    width: 70%;
+    height: 3px;
+}
+.text p{
+    position: relative;
+    font-size: 0.9rem;
+    font-weight: 300;
+    background: rgba(120, 170, 184, 0.9);
+    padding: 20px;
+    text-align: justify;
+    line-height: 1.4rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: rgb(247, 241, 241);
+}
+
+/********************Mission,vission and values*********************/
+.mission{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 70px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(21, 48, 197);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.mission-col{
+    flex-basis: 31%;
+    background: #baee98;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+/********************Directors********************/
+.directors-col{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8fcce9;
+}
+.container{
+    max-width: 950px;
+    width: 100%;
+    padding: 80px 0;
+}
+.main-card .cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.20px;
+    column-gap: 20px;
+}
+.main-card .cards .card{
+    background: #fff;
+    width: calc(100% / 3- 10px);
+    padding: 30px;
+    border-radius: 30px;
+}
+.cards .card .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards .card .content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: #1aa36e;
+    padding: 3px;
+    border-radius: 50%;
+}
+.card .content .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40%; /**it should be 50%**/
+    border: 3px solid #fff;   
+} 
+.card .content .details .name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.card .content .details .prof{
+    font-size: 15px;
+    color: #3a9e96;
+}
+
+/********************Management********************/
+.management-col{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8fcce9;
+}
+.mang-container{
+    max-width: 950px;
+    width: 100%;
+    padding: 80px 0;
+}
+.mang-main-card .mang-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.20px;
+    column-gap: 20px;
+}
+.mang-main-card .mang-cards .mang-card{
+    background: #fff;
+    width: calc(100% / 3- 10px);
+    padding: 30px;
+    border-radius: 30px;
+}
+.mang-cards .mang-card .mang-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.mang-cards .mang-card .mang-content .mang-img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: #1aa36e;
+    padding: 3px;
+    border-radius: 50%;
+}
+.mang-card .mang-content .mang-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 40%; /**it should be 50%**/
+    border: 3px solid #fff;   
+} 
+.mang-card .mang-content .mang-details .mang-name{
+    font-size: 20px;
+    font-weight: 700;
+}
+.mang-card .mang-content .mang-details .mang-prof{
+    font-size: 15px;
+    color: #3a9e96;
+}
+
+/********************Awards********************/
+.award-col{
+    min-height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #8fcce9;
+}
+.aw-container{
+    max-width: 950px;
+    width: 100%;
+    padding: 80px 0;
+}
+.aw-main-card .aw-cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.20px;
+    column-gap: 20px;
+}
+.aw-main-card .aw-cards .aw-card{
+    background: #fff;
+    width: calc(100% / 3- 10px);
+    padding: 30px;
+    border-radius: 30px;
+}
+.aw-cards .aw-card .aw-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.aw-cards .aw-card .aw-content .img{
+    height: 130px;
+    width: 130px;
+    margin-bottom: 14px;
+    background: #1aa36e;
+    padding: 3px;
+    border-radius: 60%;
+}
+.aw-card .aw-content .aw-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30%; /**it should be 50%**/
+    border: 3px solid #fff;   
+} 
+.aw-card .aw-content .aw-detailss .aw-name{
+    font-size: 20px;
+    font-weight: 1000;
+}
+.aw-card .aw-content .aw-details .aw-discrip{
+    font-size: 15px;
+    color: #3a9e96;
+}

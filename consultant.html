@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-nav-consultant.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="style-consultant.css">
+        
+        <title>Life Care Hospital</title>
+    </head>
+    <body>
+        <!------------------Header ----------------------->
+    <section class="header">
+        <!------------------ nav bar ---------------------->
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="consultant.html">consultant</a></li>
+                    <li><a href="e-channelling.html">E-Channeling</a></li>
+                    <li><a href="child-care.html">Child Care</a></li>
+                    <li><a href="covid-19.html">Covid-19</a></li>
+                    <li><a href="advice.html">Advice</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        
+        
+    </section>
+<!------------------------------consultants--------------------------------------->
+    <section class="split">
+        
+        <div class="left" style="display: inline-block;" >
+    
+            <div class="mi-col" id="tab-1" onclick="showTab(1)">
+                <h3>General Surgeons</h3>
+            </div>
+            <div class="mi-col" id="tab-2" onclick="showTab(2)">
+                <h3>cardiologist</h3>       
+            </div>
+            <div class="mi-col" id="tab-3" onclick="showTab(3)">
+                <h3>Dental</h3>
+            
+            </div>
+            <div class="mi-col" id="tab-4" onclick="showTab(4)">
+                <h3>Neurology</h3>
+                
+            </div>
+            <div class="mi-col" id="tab-5" onclick="showTab(5)">
+                <h3>Orthopaedic</h3>
+                
+            </div>
+            <div class="mi-col" id="tab-6" onclick="showTab(6)">
+                <h3>Ophthalmology</h3>
+                
+            </div>
+            <div class="mi-col" id="tab-7" onclick="showTab(7)">
+                <h3>Paediatric</h3>
+                
+            </div>
+            <div class="mi-col" id="tab-8" onclick="showTab(8)">
+                <h3>Physicians</h3>
+                
+            </div>
+            <div class="mi-col" id="tab-9" onclick="showTab(9)">
+                <h3>Respiratory Medicine</h3>
+                
+            </div>
+            <div class="mi-col" id="tab-10" onclick="showTab(10)">
+                <h3>Urology</h3>
+            </div>
+        </div>
+    
+        <!-- moving content -->
+        <div class="right content" style="display: inline-block;">
+            <div>
+                <div class="default-ui">
+                    <div class="text-box">
+                        <h1>Consultants</h1><br>
+                        <h2>Welcome to our Counseling Directory!</h2><br>
+                        <p>We hope this information helps our patients and physicians make informed choices about the services we provide.<br>This directory is updated regularly.</p>
+                        <a href="about.html" class="here-btn">About Us</a>
+                    </div>
+
+                </div>
+                
+            </div>
+    
+            
+            
+            <div class="typ hide" id="typ-1">
+    
+                <div class="tab elm3 elm3of1" id="doc-1" onclick="showTable(1)">
+                    <img src="image/ge.jpg" height="125px" width="125px">
+                    <h3>Dr.D.M. Prasad</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(General Surgeon)</h3>
+                    <p><br><br><br></p>
+                
+                </div>
+                <div class="tab elm3 elm3of2" id="doc-2" onclick="showTable(2)">
+                    <img src="image/ge2.jpg" height="125" width="125">
+                    <h3>Dr.Pathum Premanath</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(General Surgeon)</h3>
+                    <p><br><br><br></p>
+                
+                </div>
+                <div class="tab elm3 elm3of3" id="doc-3" onclick="showTable(3)">
+                    <img src="image/ge3.jpg" height="125px" width="125px">
+                    <h3>Dr.(Mrs)Omali Wimalarathna</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(General Surgeon)</h3>
+                    <p><br><br><br></p>
+    
+                    
+                </div>
+            </div>
+            
+            <div class="typ hide" id="typ-2">
+                <div class="tab elm3 elm3of1" id="doc-4" onclick="showTable(4)">
+                    <img src="image/ca1.jpg" height="125px" width="125px">
+                    <h3>Dr.Thisara Herath</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Cardiologist Surgery)</h3>
+                    <p>Medical examinations <br>
+                        Treatment for heart attack, heart rhythm problems<br>
+                        and heart attack</p>
+                    
+                    
+                </div>
+                <div class="tab elm3 elm3of2" id="doc-5" onclick="showTable(5)">
+                    <img src="image/ca2.jpg" height="125px" width="125px">
+                    <h3>Dr.Nimali Sanjeewani</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Cardiologist Surgery)</h3>
+                    <!----addd-->
+                    
+                </div>
+                <div class="tab elm3 elm3of3" id="doc-6" onclick="showTable(6)">
+                    <img src="image/ca3.jpg" height="125px" width="125px">
+                    <h3>Dr.Rasika Fernando</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Cardiologist Surgery)</h3>
+                    <!--addd-->
+                    
+                </div>
+            </div>
+    
+            <div class="typ hide" id="typ-3">
+                <div class="tab elm2 elm2of1" id="doc-7" onclick="showTable(7)">
+                    <img src="image/de1.jpg" height="125px" width="125px">
+                    <h3>Dr.I.p.Kahawita</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Dental Surgeon)</h3>
+                    <br><br>
+                    
+                </div>
+    
+                <div class="tab elm2 elm2of2" id="doc-8" onclick="showTable(8)">
+                    <img src="image/de2.jpg" height="125px" width="125px">
+                    <h3>Dr.M.Sheriff</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Dental Surgeon)</h3>
+                    <!--addd-->  <p></p>
+                    <br><br>
+                
+                </div>
+            </div>
+    
+            <div class="typ hide" id="typ-4">
+                <div class="tab elm2 elm2of1" id="doc-9" onclick="showTable(9)">
+                    <img src="image/neu1.png" height="125px" width="125px">
+                    <h3>Dr.K.Umashankar</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Neurological Surgery)</h3>
+                    <p> Minimally Invasive Neurosurgery & Spine Surgery<br>
+                    Spine Decompression & Fixation<br>
+                    Managing Critically ill Neurosurgical patients</p>
+                </div>
+    
+                <div class="tab elm2 elm2of2" id="doc-10" onclick="showTable(10)">
+                    <img src="image/neu2.jpg" height="125px" width="125px">
+                    <h3>Dr.Renuka Herath</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Neurological Surgery)</h3>
+                       <p> Liver Biopsy<br>
+                        Endoscopic retrograde cholangiopancreatography(ERCP)<br>
+                        Pancreatic stone removal/stenting</p>
+                        <br>
+                </div>
+            </div>
+    
+            <div class="typ hide" id="typ-5">
+                <div class="tab elm3 elm3of1" id="doc-11" onclick="showTable(11)">
+                    <img src="image/or1.jpg" height="125px" width="125px">
+                    <h3>Dr.K.S.Rathnayaka</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Orthopaedic Surgeon)</h3>
+                    <p>General Medicine<br>
+                    Emergency Medicine <br><br></p>
+                    
+                </div>
+                <div class="tab elm3 elm3of2" id="doc-12" onclick="showTable(12)">
+                    <img src="image/or2.png" height="125px" width="125px">
+                    <h3>Dr.Raviaml Galappaththi</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                <h3>(Orthopaedic Surgeon)</h3>
+                <p>Diagnosis, correction, prevention,<br>and treatment of patients with<br>skeletal deformities</p>
+                
+                </div>
+                <div class="tab elm3 elm3of3" id="doc-13" onclick="showTable(13)">
+                    <img src="image/or3.jpg" height="125px" width="125px">
+                    <h3>Dr.M.G.Mafaz</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Orthopaedic Surgeon)</h3>
+                    <p>Consultant Cardiologist at<br>Sri Lanka Navy, Ministry of Health<br>and Health Care Hospital</p>
+                    
+                </div>
+            </div>
+            
+            <div class="typ hide" id="typ-6">
+                <div class="tab elm2 elm2of1" id="doc-14" onclick="showTable(14)">
+                    <img src="image/op1.png" height="125px" width="125px">
+                    <h3>Dr.R.M.Bandara</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Opthamalogy Surgeon)</h3>
+                    <p> Distinguished Consultant Ophthalmologist<br>and lecturer at the<br>Health Care Hospital,Badulla</p>
+                    
+                </div>
+                <div class="tab elm2 elm2of2" id="doc-15" onclick="showTable(15)">
+                    <img src="image/op2.png" height="125px" width="125px">
+                    <h3>Dr.(Mrs) Isanka Thabrew</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Opthamalogy Surgeon)</h3>
+                    <p>Consultant Eye Surgeon,<br>experienced in all eye ailments and<br>eye surgeries</p>
+                    
+                </div>
+            </div>
+    
+            <div class="typ hide" id="typ-7">
+                <div class="tab elm2 elm2of1" id="doc-16" onclick="showTable(16)">
+                    <img src="image/pa1.png" height="125px" width="125px">
+                    <h3>Dr.J.H.S.Cooray</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Paediatric Surgeon)</h3>
+                    <p>Pediatric pulmonary specialist consultant<br>interested in bronchial asthma,<br>respiratory infections and rare respiratory diseases</p>
+    
+                    
+                </div>
+                <div class="tab elm2 elm2of2" id="doc-17" onclick="showTable(17)">
+                    <img src="image/pa2.jpg" height="125px" width="125px">
+                    <h3>Dr.Rasika Samarawikrama</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Paediatric Surgeon)</h3>
+                    <p>Consultant<br>Paediatrician <br><br><br></p>
+                    
+                </div>
+            </div>
+    
+            <div class="typ hide" id="typ-8">
+                <div class="typ-d up">
+                <div class="tab elm6 elm3of1 elm6Up" id="doc-18" onclick="showTable(18)">
+                    <img src="image/p1.png" height="125px" width="125px">
+                    <h3>Dr.(Mrs)Sudharma Hewawita</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Physicians)</h3>
+                    <p>Consultant Family Physician,<br>also a lecturer at the<br>University of Colombo</p>
+                    
+                </div>
+                <div class="tab elm6 elm3of2 elm6Up" id="doc-19" onclick="showTable(19)">
+                    <img src="image/ph2.jpg" height="125px" width="125px">
+                    <h3>Prof.R.Wimalarathna</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Physicians)</h3>
+                    <p>Physician with extensive<br>experience in medical emergencies<br>and intensive care practices</p>
+                    <br><br><br>
+                </div>
+                <div class="tab elm6 elm3of3 elm6Up" id="doc-20" onclick="showTable(20)">
+                    <img src="image/ph3.png" height="125px" width="125px">
+                    <h3>Dr.Dulip Rajapaksha</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Physicians)</h3>
+                    <p>Provides comprehensive health care<br> for the individual and family<br>across all ages and genders</p>
+                    <br><br><br>
+                </div>
+                </div>
+                
+                <div class="typ-d down">
+                <div class="tab elm6 elm3of1  elm6Down" id="doc-21" onclick="showTable(21)">
+                    <img src="image/ph4.png" height="125px" width="125px">
+                    <h3>Prof.Menaka Kalupahana</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Physicians)</h3>
+                    <p>Family and Corporate Physician <br><br><br></p>
+                    <br><br><br>
+                </div>
+                <div class="tab elm6 elm3of2 elm6Down" id="doc-22" onclick="showTable(22)">
+                    <img src="image/ph5.png" height="125px" width="125px">
+                    <h3>Dr.Waruna Gunathilaka</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Physicians)</h3>
+                    <p>Consultant Physician at Sri<br>Jayawardenepura,Asiri and <br>the Health Care Hospital</p>
+                    <br><br><br>
+                </div>
+                <div class="tab elm6 elm3of3 elm6Down" id="doc-23" onclick="showTable(23)">
+                    <img src="image/ph6.jpg" height="125px" width="125px">
+                    <h3>Dr.(Mrs)Thilini Bhagya</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Physicians)</h3>
+                     <!-- <p><br><br><br></p>                -->
+                     <br><br><br>    
+                </div>
+                </div>
+                
+            </div>
+    
+            <div class="typ hide" id="typ-9">
+                <div class="tab elm2 elm2of1" id="doc-24" onclick="showTable(24)">
+                    <img src="image/r1.jpg" height="125px" width="125px">
+                    <h3>Dr.Adithya Jagoda</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Respiratory Medicine)</h3>
+                    <!---addd--><p><br><br></p>
+                
+                </div>
+                <div class="tab elm2 elm2of2" id="doc-25" onclick="showTable(25)">
+                    <img src="image/r2.jpg" height="125px" width="125px">
+                    <h3>Dr.Dushan Jayasekara</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Respiratory Medicine)</h3>
+                    <!---addd--><p><br><br></p>
+                    
+                </div>
+            </div>
+    
+            <div class="typ hide" id="typ-10">
+                <div class="tab elm3 elm3of1" id="doc-26" onclick="showTable(26)">
+                <img src="image/u1.jpg" height="125px" width="125px">
+                <h3>Dr.Mihira Bandara</h3>
+                <h3>MBBS(Sri Lanka)</h3>
+                <h3>(Urologist)</h3>
+                <!---addd--><p><br><br><br></p>
+                </div>
+    
+                <div class="tab elm3 elm3of2" id="doc-27" onclick="showTable(27)">
+                    <img src="image/u2.jpg" height="125px" width="125px">
+                    <h3>Dr.(Mrs)Joshiga Raveekumar</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Urologist)</h3>
+                    <!---addd--><p><br><br><br></p>
+                </div>
+    
+                <div class="tab elm3 elm3of3" id="doc-28" onclick="showTable(28)">
+                    <img src="image/u3.jpg" height="125px" width="125px">
+                    <h3>Dr.Ruwan Padmakumara</h3>
+                    <h3>MBBS(Sri Lanka)</h3>
+                    <h3>(Urologist)</h3>
+                    <!---addd--><p><br><br><br></p>
+                    
+                </div>
+            </div>
+    
+        </div>
+        
+        <!-- mask -->
+        <div id="mask" class="hide"></div>
+        
+        <!-- time tables -->
+        <div>
+            <!-- General Surgeons -->
+            <div id="table-doc-1" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.D.M. Prasad</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>07.30-19.30</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>21.30-00.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>07.30-19.30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>21.30-00.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>07.30-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>12.00-15.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10.30-20.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <div id="table-doc-2" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                    <th colspan="2">Dr.Pathum Premanath</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>10.00-16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>10.00-16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>10.30-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>10.00-16.00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>17.30-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>15.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10.00-16.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <div id="table-doc-3" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.(Mrs)Omali Wimalarathne</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>18.00-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>16.00-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>17.30-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>16.00-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>10.00-18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>21.00-00.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>19.00-21.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+    
+            <!-- Cardiologist -->
+            <div id="table-doc-4" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Thisara Herath</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>17.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>17.00-20.00</td>
+                    </tr>  
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-5" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Nimali Sanjeewani</th>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>12.30-15.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-6" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Rasika Fernando</th>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>12.00-15.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            
+            <!-- Dental -->
+            <div id="table-doc-7" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.I.P.Kahawita</th>
+                        <tr>
+                            <td>Monday</td>
+                            <td>16.00-19.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>18.00-21.00</td>
+                        </tr>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-8" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.M.Sheriff</th>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>18.00-21.00</td>
+                        </tr>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>  
+    
+    
+            <!-- Neurology -->
+            <div id="table-doc-9" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.K.Umashankar</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>17.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>17.30-20-30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>16.00-19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>07.30-10-30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-10" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Renuka Herath</th>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>16.00-19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>17.30-10.30</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>11.00-14.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <!-- Orthopaedic -->
+            <div id="table-doc-11" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.K.S.Rathnayaka</th>
+                        <tr>
+                            <td>Monday</td>
+                            <td>20.30-23.00</td>
+    
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>20.30-23.00</td>
+    
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>12.00-15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>07.00-10.00</td>
+                        </tr>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-12" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Raviaml Galappaththi</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>20.30-23.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>19.30-21.30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>20.30-23.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>15.00-18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>14.00-17.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <div id="table-doc-13" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.M.G.Mafaz</th>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>20.30.23.30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>19.30.21.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>19.30-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>15.30-18.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <!-- Opthamalogy -->
+            <div id="table-doc-14" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.R.M.Bandara</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>08.00-13.00</td>
+                    
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>13.00-16.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <div id="table-doc-15" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.(Mrs) Isanka Thabrew</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>13.00-18.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>15.30-17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>18.30-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>17.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>18.30-21.30</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>12.00-15.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <!-- Paediatric    -->
+            <div id="table-doc-16" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.J.H.S.Cooray</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>08.00-13.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10.00-14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10.30-14.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <div id="table-doc-17" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Rasika Samarawikrama</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>16.30-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>16.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>17.30-22.30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>16.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>16.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>16.00-19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>17.30-20.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <!-- Physicians -->
+            <div id="table-doc-18" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.(Mrs)Sudharma Hewawita</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>07.00-11.00</td>
+    
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>07.30-09.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>07.00-11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>07.30-09.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>07.00-11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>07.00-11.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>08.00-11.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-19" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Prof.R.Wimalarathna</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>08.00-18.30</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>08.00-18.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>08.00-18.30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>08.00-18.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>08.00-18.30</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>08.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>08.00-19.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-20" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Dulip Rajapaksha</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>09.00-16.30</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>16.30-19.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>09.00-16.30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>16.30-19.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>09.00-16.30</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>14.00-17.00</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>14.00-18.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-21" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Prof.Menaka Kalupahana</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>16.30-19.30</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>17.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>16.30-19.30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>17.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>16.30-19.30</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>16.30-19.30</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>15.30-20.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-22" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Waruna Gunathilaka</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>18.00-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>19.00-22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>18.00-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>19.00-22.00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>18.00-21.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>19.30-22.30</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>19.00-23.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-23" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.(Mrs)Thilini Bhagya</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>19.30-22.30</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>19.30-22.30</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>19.30-22.30</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>19.30-22.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>19.30-22.30</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>20.15-23.15</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>20.00-23.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <!-- Respiratory Medicine -->
+            <div id="table-doc-24" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Adithya Jagoda</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>11.00-14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>11.00-14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>11.00-14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>11.00-14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>11.00-14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>18.00-11.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-25" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Dushan Jayasekara</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>17.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>17.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>17.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>17.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>17.30-20.30</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>08.30-11.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+    
+            <!-- Urology -->
+            <div id="table-doc-26" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Mihira Bandara</th>
+                    </tr>
+                    <tr>
+                        <td>Monday</td>
+                        <td>17.00-20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Saturdayday</td>
+                        <td>17.00-20.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-27" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.(Mrs)Joshiga Raveekumar</th>
+                    </tr>
+                    <tr>
+                        <td>Wendsday</td>
+                        <td>07.30-11.30</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>07.30-11.30</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+            
+            <div id="table-doc-28" class="popDown tableDiv">
+                <table border="1px">
+                    <tr>
+                        <th colspan="2">Dr.Ruwan Padmakumara</th>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>08.00-11.00</td>
+                    </tr>
+                </table>
+                <div class="close-btn" onclick="closeTable()"><h2>Close</h2></div>
+            </div>
+        </div>
+        </section>
+        <!--------------------- footer ------------------------------>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Hospital</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Our Services</a></li>
+                            <li><a href="consultant.html">Consultants</a></li>
+                            <li><a href="covid-19.html">Covid-19</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="branches.html">Branches</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>E-Channelling</h4>
+                        <ul>
+                            <li><a href="e-channelling.html">Channel Doctor</a></li>
+                            <li><a href="payment.html">Payment Options</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="ourTeam">
+                    <a href="team.html">Developing Team</a>
+                </div>
+            </div>
+        </footer>
+
+        
+        <script src="js-consultant.js"></script>
+
+        <!------------------ js for mobile menu------------------>
+        <script src="myscripts.js"></script>
+    </body>
+</html>

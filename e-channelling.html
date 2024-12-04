@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style-header-footer.css">
+        <link rel="stylesheet" href="style-eChanelling.css">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <title>Life Care Hospital</title>
+    </head>
+    <body>
+        <!------------------Header ----------------------->
+    <section class="header">
+        <!------------------ nav bar ---------------------->
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="consultant.html">consultant</a></li>
+                    <li><a href="e-channelling.html">E-Channeling</a></li>
+                    <li><a href="child-care.html">Child Care</a></li>
+                    <li><a href="covid-19.html">Covid-19</a></li>
+                    <li><a href="advice.html">Advice</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+    
+    <section id="bg-area">
+    
+    <h1>E-Chanelling</h1>
+
+    <div id="container">
+        <form name="eChanell" onsubmit="return checkForm()">
+            <div>
+                <label for="docType">Category of Doctor :</label> 
+                <select name="docType" id="docType" onchange="updateDocType()">
+                    <option value="docType-1" id="docType-1">General Surgeons</option>
+                    <option value="docType-2" id="docType-2">Cardiologist </option>
+                    <option value="docType-3" id="docType-3">Dental </option>
+                    <option value="docType-4" id="docType-4">Neurology </option>
+                    <option value="docType-5" id="docType-5">Orthopaedic </option>
+                    <option value="docType-6" id="docType-6">Ophthalmology</option>
+                    <option value="docType-7" id="docType-7">Paediatric</option>
+                    <option value="docType-8" id="docType-8">Physicians</option>
+                    <option value="docType-9" id="docType-9">Respiratory Medicine</option>
+                    <option value="docType-10" id="docType-10">Urology</option>
+                </select>
+            </div>
+            
+            <div>    
+                <label for="">Doctor Name :</label>
+                <div id="list-docType-1" class="show" onchange="updateTimeTable()">
+                    <select name="list-docType-1" id="ls-docType-1">
+                        <option value="doc1">Dr.D.M prasad</option>
+                        <option value="doc2">Dr.Pathum Premanath</option>
+                        <option value="doc3">Dr.(Mrs) Omali wimalarathne </option>
+                    </select>
+                </div>
+                <div id="list-docType-2" class="hide" onchange="updateTimeTable()">
+                    <select name="list-docType-2" id="ls-docType-2">
+                        <option value="doc4">Dr.Thisara Herath</option>
+                        <option value="doc5">Dr.(Mrs)Nimali Sanjeewani</option>
+                        <option value="doc6">Dr.Rasika Fernando</option>
+                    </select>
+                </div>
+                <div id="list-docType-3" class="hide" onchange="updateTimeTable()">
+                <select name="list-docType-3" id="ls-docType-3">
+                    <option value="doc7">Dr.I.P.Kahawita</option>
+                    <option value="doc8">Dr.M.Sheriff</option>
+                    
+                </select>
+                </div>
+                <div id="list-docType-4" class="hide" onchange="updateTimeTable()">
+                    <select name="list-docType-4" id="ls-docType-4" >
+                        <option value="doc9">Dr.K.Umashankar</option>
+                        <option value="doc10">Dr.(Mrs)Renuka Herath</option>
+                        
+                    </select>
+                </div>
+                <div id="list-docType-5" class="hide" onchange="updateTimeTable()">
+                    <select name="list-docType-5" id="ls-docType-5" >
+                        <option value="doc11">Dr.K.S.Pathinayaka</option>
+                        <option value="doc12">Dr.Ravimal Galappaththi</option>
+                        <option value="doc13">Dr.M.G.Mafaz</option>
+                    </select>
+                </div>
+                <div id="list-docType-6" class="hide" onchange="updateTimeTable()">
+                    <select name="list-docType-6" id="ls-docType-6">
+                        <option value="doc14">Dr.R.N.Bandara</option>
+                        <option value="doc15">Dr.(Mrs)Isanka Thabrew</option>
+                        
+                    </select>
+                </div>
+                <div id="list-docType-7" class="hide" onchange="updateTimeTable()">
+                    <select name="list-docType-7" id="ls-docType-7" >
+                        <option value="doc16">Dr.J.H.S.Cooray</option>
+                        <option value="doc17">Dr.Rasika Samarawikrama</option>
+                        
+                    </select>
+                </div>
+                <div id="list-docType-8" class="hide" onchange="updateTimeTable()">
+                    <select name="list-docType-8" id="ls-docType-8" >
+                        <option value="doc18">Dr.(Mrs)Sudharma Hewawita</option>
+                        <option value="doc19">Prof.R.Wimlarathna</option>
+                        <option value="doc20">Dr.Dulip Rajapaksha</option>
+                        <option value="doc21">Prof.Menaka Kalupahana</option>
+                        <option value="doc22">Dr.Waruna Gunathilaka</option>
+                        <option value="doc23">Dr.(Mrs) Thilini Bhagya</option>
+                    </select>
+                </div>
+                <div id="list-docType-9" class="hide" onchange="updateTimeTable()">
+                    <select name="list-docType-9" id="ls-docType-9" >
+                        <option value="doc24">Dr.Adithya Jagoda</option>
+                        <option value="doc25">Dr.Dushan Jayasekara</option>
+                        
+                    </select>
+                </div>
+                <div id="list-docType-10" class="hide" onchange="updateTimeTable()">
+                    <select name="list-docType-10" id="ls-docType-10">
+                        <option value="doc26">Dr.Mihira Bandara</option>
+                        <option value="doc27">Dr.(Mrs) Joshiga Raveekumar</option>
+                        <option value="doc28">Dr.Ruwan Padmakumara</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- time tables -->
+            <div>
+                <!-- General Surgeons -->
+                <div id="table-doc1" class="show">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.D.M. Prasad</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>07.30-19.30</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>21.30-00.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>07.30-19.30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>21.30-00.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>07.30-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>12.00-15.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10.30-20.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="table-doc2" class="hide">
+                    <table border="1px">
+                        <tr>
+                        <th colspan="2">Dr.Pathum Premanath</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>10.00-16.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>10.00-16.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>10.30-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>10.00-16.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>17.30-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>15.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10.00-16.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="table-doc3" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.(Mrs)Omali Wimalarathne</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>18.00-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>16.00-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>17.30-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>16.00-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>10.00-18.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>21.00-00.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>19.00-21.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+
+                <!-- Cardiologist -->
+                <div id="table-doc4" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Thisara Herath</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>17.00-20.00</td>
+                        </tr>  
+                    </table>
+                </div>
+                
+                <div id="table-doc5" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Nimali Sanjeewani</th>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>12.30-15.30</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc6" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Rasika Fernando</th>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>12.00-15.00</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                
+                <!-- Dental -->
+                <div id="table-doc7" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.I.P.Kahawita</th>
+                            <tr>
+                                <td>Monday</td>
+                                <td>16.00-19.00</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>18.00-21.00</td>
+                            </tr>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc8" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.M.Sheriff</th>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>18.00-21.00</td>
+                            </tr>
+                        </tr>
+                    </table>
+                </div>  
+
+
+                <!-- Neurology -->
+                <div id="table-doc9" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.K.Umashankar</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>17.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>17.30-20-30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>16.00-19.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>07.30-10-30</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc10" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Renuka Herath</th>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>16.00-19.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>17.30-10.30</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>11.00-14.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Orthopaedic -->
+                <div id="table-doc11" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.K.S.Rathnayaka</th>
+                            <tr>
+                                <td>Monday</td>
+                                <td>20.30-23.00</td>
+
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>20.30-23.00</td>
+
+                            </tr>
+                            <tr>
+                                <td>Wendsday</td>
+                                <td>12.00-15.00</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>07.00-10.00</td>
+                            </tr>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc12" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Raviaml Galappaththi</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>20.30-23.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>19.30-21.30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>20.30-23.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>15.00-18.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>14.00-17.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="table-doc13" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.M.G.Mafaz</th>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>20.30.23.30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>19.30.21.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>19.30-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>15.30-18.30</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Opthamalogy -->
+                <div id="table-doc14" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.R.M.Bandara</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>08.00-13.00</td>
+                        
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>13.00-16.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="table-doc15" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.(Mrs) Isanka Thabrew</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>13.00-18.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>15.30-17.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>18.30-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>18.30-21.30</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>12.00-15.00</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Paediatric    -->
+                <div id="table-doc16" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.J.H.S.Cooray</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>08.00-13.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>10.00-14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>10.30-14.30</td>
+                        </tr>
+                    </table>
+                </div>
+        
+                <div id="table-doc17" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Rasika Samarawikrama</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>16.30-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>16.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>17.30-22.30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>16.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>16.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>16.00-19.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>17.30-20.30</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Physicians -->
+                <div id="table-doc18" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.(Mrs)Sudharma Hewawita</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>07.00-11.00</td>
+
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>07.30-09.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>07.00-11.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>07.30-09.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>07.00-11.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>07.00-11.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>08.00-11.00</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc19" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Prof.R.Wimalarathna</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>08.00-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>08.00-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>08.00-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>08.00-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>08.00-18.30</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>08.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>08.00-19.30</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc20" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Dulip Rajapaksha</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>09.00-16.30</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>16.30-19.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>09.00-16.30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>16.30-19.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>09.00-16.30</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>14.00-17.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>14.00-18.00</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc21" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Prof.Menaka Kalupahana</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>16.30-19.30</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>17.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>16.30-19.30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>17.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>16.30-19.30</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>16.30-19.30</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>15.30-20.00</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc22" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Waruna Gunathilaka</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>18.00-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>19.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>18.00-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>19.00-22.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>18.00-21.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>19.30-22.30</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>19.00-23.30</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc23" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.(Mrs)Thilini Bhagya</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>19.30-22.30</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>19.30-22.30</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>19.30-22.30</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>19.30-22.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>19.30-22.30</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>20.15-23.15</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>20.00-23.30</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Respiratory Medicine -->
+                <div id="table-doc24" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Adithya Jagoda</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>11.00-14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>11.00-14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>11.00-14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>11.00-14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>11.00-14.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>18.00-11.30</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc25" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Dushan Jayasekara</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>17.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>17.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>17.30-20.30</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>08.30-11.30</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- Urology -->
+                <div id="table-doc26" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Mihira Bandara</th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                        <tr>
+                            <td>Saturdayday</td>
+                            <td>17.00-20.00</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc27" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.(Mrs)Joshiga Raveekumar</th>
+                        </tr>
+                        <tr>
+                            <td>Wendsday</td>
+                            <td>07.30-11.30</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>07.30-11.30</td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div id="table-doc28" class="hide">
+                    <table border="1px">
+                        <tr>
+                            <th colspan="2">Dr.Ruwan Padmakumara</th>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>08.00-11.00</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="inputElm">
+                <label for="pName">Patient Name <span>*</span> :</label>
+                <input type="text" id = "pName" name="pName">
+            </div>
+            <div class="inputElm">
+                <label for="age">Age <span>*</span>:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="inputElm">
+                <label for="telNo">Tel No <span>*</span> :</label>
+                <input type="tel" name="telNo" id="telNo">
+            </div>
+            <div class="inputElm">
+                <label for="email">Email :</label>
+                <input type="email" name="" id="">
+            </div>
+            <div class="inputElm">
+               <input type="submit" value="Chanel Doctor">
+               <input type="reset" value="Clear"> 
+            </div>
+
+
+        </form>
+    </div>
+
+    </section>
+
+        <!--------------------- footer ------------------------------>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Hospital</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Our Services</a></li>
+                            <li><a href="consultant.html">Consultants</a></li>
+                            <li><a href="covid-19.html">Covid-19</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Get Help</h4>
+                        <ul>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="branches.html">Branches</a></li>
+                            <li><a href="facilities.html">Facilities</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>E-Channelling</h4>
+                        <ul>
+                            <li><a href="e-channelling.html">Channel Doctor</a></li>
+                            <li><a href="payment.html">Payment Options</a></li>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div class="ourTeam">
+                    <a href="team.html">Developing Team</a>
+                </div>
+            </div>
+        </footer>
+    
+        <!------------------ js for mobile menu------------------>
+        <script src="myscripts.js"></script>
+
+        <script src="js-eChanelling.js"></script>
+    </body>
+</html>
